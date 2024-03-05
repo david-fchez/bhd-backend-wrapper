@@ -1,0 +1,16 @@
+[package]
+name = "backend_wrapper"
+version = "0.1.0"
+authors = ["david-fchez (david-fchez)"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+gdnative = "0.11"
+# gdnative = { path = "../../godot-rust/gdnative" }
+libloading = "0.7"
+serde = { version = "1.0.130", features = ["derive"] }
+serde_derive = "1.0.130"
+serde_json = "1.0.68"
